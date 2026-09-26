@@ -1,0 +1,87 @@
+{
+  "Metadata": {
+    "title": "Terecode - Der universelle UI-Compiler",
+    "description": "Schreibe deine UI-Komponenten einmal in einer klaren, deklarativen Sprache. Terecode kompiliert sie zu idiomatischem React-, Vue-, Svelte-, Solid-, Angular-Code und mehr - echter Quellcode, kein Runtime.",
+    "ogDescription": "Eine Komponentensprache. Zehn Frameworks. Terecode kompiliert .trc-Komponenten zu idiomatischem, lesbarem Code für jedes Ziel."
+  },
+  "Nav": {
+    "why": "Warum",
+    "targets": "Ziele",
+    "features": "Funktionen",
+    "install": "Installieren",
+    "getStarted": "Loslegen",
+    "github": "Terecode auf GitHub"
+  },
+  "Hero": {
+    "badge": "Der universelle UI-Compiler",
+    "heading": "Einmal schreiben. In jedes Framework ausliefern.",
+    "leadPrefix": "ist eine deklarative Sprache für UI-Komponenten. Eine Quelle kompiliert zu",
+    "leadHighlight": "idiomatischem, lesbarem Code",
+    "leadSuffix": "für React, Vue, Svelte und sieben weitere Ziele - echter Quellcode, der dir gehört, kein auszulieferndes Runtime.",
+    "getStarted": "Loslegen",
+    "viewGithub": "Auf GitHub ansehen",
+    "compilesTo": "kompiliert zu React, Vue, Svelte, Solid, Angular, RN, WC, Astro, Flutter, Kotlin"
+  },
+  "Why": {
+    "eyebrow": "Warum Terecode",
+    "title": "Dieselbe UI, überall - ohne Copy-Paste.",
+    "lead": "Teams, die für Web und Mobile ausliefern, pflegen dieselben Komponenten immer wieder neu. Terecode bündelt das in einer einzigen, deklarativen Quelle.",
+    "card1Title": "Eine einzige Quelle der Wahrheit",
+    "card1Body": "Schluss damit, denselben Button, dasselbe Formular und dieselbe Karte in jedem Framework neu zu bauen. Definiere Komponenten, Design Tokens, Skins und Themes nur einmal.",
+    "card2Title": "Echte, lesbare Ausgabe",
+    "card2Body": "Terecode erzeugt idiomatischen Code für jedes Ziel - Hooks und clsx für React, Runes für Svelte, Signals für Solid. Code, den du lesen, vergleichen und besitzen kannst.",
+    "card3Title": "Kein Runtime",
+    "card3Body": "Es gibt nichts, was du an deine Nutzer ausliefern musst. Die Ausgabe ist reiner Framework-Code ohne jede Terecode-Abhängigkeit zur Laufzeit."
+  },
+  "Targets": {
+    "eyebrow": "Zehn Ziele",
+    "title": "Eine Sprache. Jedes Framework, das du wirklich nutzt.",
+    "lead": "Jeder Emitter erzeugt Code, der aussieht, als hätte ihn ein Senior-Entwickler von Hand für diese Plattform geschrieben - ihren Konventionen folgend, nicht einem kleinsten gemeinsamen Nenner."
+  },
+  "CodeTour": {
+    "eyebrow": "Sieh es kompilieren",
+    "title": "Dieselbe Komponente, auf jeder Seite idiomatisch.",
+    "lead": "Ein Counter.trc, zwei Ausgaben. React bekommt Hooks; Svelte 5 bekommt Runes und native Events. Nichts Generisches - jede liest sich wie handgeschriebener Code.",
+    "done": "fertig"
+  },
+  "Features": {
+    "eyebrow": "Eine vollständige Toolchain",
+    "title": "Alles rund um die Sprache, inklusive.",
+    "lead": "Terecode ist nicht nur ein Compiler - es ist der komplette Workflow: Erstellen, Stylen, Werkzeuge und Design-Integration.",
+    "f1Title": "10 Emitter",
+    "f1Body": "React, Vue, Svelte, Solid, Angular, React Native, Web Components, Astro, Flutter und Kotlin Compose - alles aus einer IR.",
+    "f2Title": "Tokens, Skins & Themes",
+    "f2Body": "Design Tokens, Komponenten-Skins und Themes sind erstklassig. Style einmal und löse zu CSS-Variablen, StyleSheet oder Plattform-Styles auf.",
+    "f3Title": "Decompiler",
+    "f3Body": "Du hast schon React- oder Vue-Komponenten? Hol sie zurück nach Terecode - Hin- und Rückweg zu .trc unter Erhalt der Struktur.",
+    "f4Title": "Language Server",
+    "f4Body": "Vervollständigung, Hover, Gehe-zu-Definition und Diagnosen für .trc-Dateien, mit kontextbezogenen Vorschlägen in jedem Block.",
+    "f5Title": "Prettier & Storybook",
+    "f5Body": "Ein idempotenter Formatter für jeden Dateityp, plus ein Storybook-Addon, das Stories und Controls aus deinen Komponenten generiert.",
+    "f6Title": "Figma-Synchronisation",
+    "f6Body": "Halte Design und Code im Gleichschritt - synchronisiere Tokens und Komponenten zwischen Terecode und deinen Figma-Bibliotheken."
+  },
+  "Install": {
+    "eyebrow": "Loslegen",
+    "title": "Installiere die CLI und kompiliere deine erste Komponente.",
+    "leadPrefix": "Füge Terecode zu jedem Projekt hinzu. Richte es auf eine",
+    "leadSuffix": "-Datei und wähle deine Ziele.",
+    "readDocs": "Dokumentation lesen",
+    "star": "Auf GitHub mit Stern markieren"
+  },
+  "Footer": {
+    "tagline": "Der universelle UI-Compiler. Schreibe Komponenten einmal und liefere idiomatischen Code in jedes Framework.",
+    "why": "Warum Terecode",
+    "targets": "Ziele",
+    "features": "Funktionen",
+    "github": "GitHub",
+    "rights": "MIT-Lizenz"
+  },
+  "Theme": {
+    "toLight": "Zum hellen Modus wechseln",
+    "toDark": "Zum dunklen Modus wechseln"
+  },
+  "Lang": {
+    "label": "Sprache"
+  }
+}

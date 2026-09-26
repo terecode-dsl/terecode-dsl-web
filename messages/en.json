@@ -1,0 +1,87 @@
+{
+  "Metadata": {
+    "title": "Terecode - The universal UI compiler",
+    "description": "Write your UI components once in a clean, declarative language. Terecode compiles them to idiomatic React, Vue, Svelte, Solid, Angular, and more - real source code, not a runtime.",
+    "ogDescription": "One component language. Ten frameworks. Terecode compiles .trc components to idiomatic, readable code for every target."
+  },
+  "Nav": {
+    "why": "Why",
+    "targets": "Targets",
+    "features": "Features",
+    "install": "Install",
+    "getStarted": "Get started",
+    "github": "Terecode on GitHub"
+  },
+  "Hero": {
+    "badge": "The universal UI compiler",
+    "heading": "Write once. Ship to every framework.",
+    "leadPrefix": "is a declarative language for UI components. One source compiles to",
+    "leadHighlight": "idiomatic, readable code",
+    "leadSuffix": "for React, Vue, Svelte, and seven more targets - real source you own, not a runtime to ship.",
+    "getStarted": "Get started",
+    "viewGithub": "View on GitHub",
+    "compilesTo": "compiles to React, Vue, Svelte, Solid, Angular, RN, WC, Astro, Flutter, Kotlin"
+  },
+  "Why": {
+    "eyebrow": "Why Terecode",
+    "title": "The same UI, everywhere - without the copy-paste.",
+    "lead": "Teams shipping to web and mobile maintain the same components many times over. Terecode collapses that into a single, declarative source.",
+    "card1Title": "One source of truth",
+    "card1Body": "Stop rebuilding the same button, form, and card in every framework. Author components, design tokens, skins, and themes once.",
+    "card2Title": "Real, readable output",
+    "card2Body": "Terecode emits idiomatic source for each target - hooks and clsx for React, runes for Svelte, signals for Solid. Code you can read, diff, and own.",
+    "card3Title": "Not a runtime",
+    "card3Body": "There's nothing to ship to your users. The output is plain framework code with zero Terecode dependency at runtime."
+  },
+  "Targets": {
+    "eyebrow": "Ten targets",
+    "title": "One language. Every framework you actually use.",
+    "lead": "Each emitter generates code that looks like a senior engineer wrote it by hand for that platform - following its conventions, not a lowest common denominator."
+  },
+  "CodeTour": {
+    "eyebrow": "See it compile",
+    "title": "The same component, idiomatic on every side.",
+    "lead": "One Counter.trc, two outputs. React gets hooks; Svelte 5 gets runes and native events. Nothing generic - each reads like hand-written code.",
+    "done": "done"
+  },
+  "Features": {
+    "eyebrow": "A complete toolchain",
+    "title": "Everything around the language, included.",
+    "lead": "Terecode isn't just a compiler - it's the full workflow: authoring, styling, tooling, and design integration.",
+    "f1Title": "10 emitters",
+    "f1Body": "React, Vue, Svelte, Solid, Angular, React Native, Web Components, Astro, Flutter, and Kotlin Compose - all from one IR.",
+    "f2Title": "Tokens, skins & themes",
+    "f2Body": "Design tokens, component skins, and themes are first-class. Style once and resolve to CSS variables, StyleSheet, or platform styles.",
+    "f3Title": "Decompiler",
+    "f3Body": "Already have React or Vue components? Bring them back into Terecode - round-trips to .trc with structure preserved.",
+    "f4Title": "Language server",
+    "f4Body": "Completion, hover, go-to-definition, and diagnostics for .trc files, with context-aware suggestions inside every block.",
+    "f5Title": "Prettier & Storybook",
+    "f5Body": "An idempotent formatter for every file type, plus a Storybook addon that generates stories and controls from your components.",
+    "f6Title": "Figma sync",
+    "f6Body": "Keep design and code in step - sync tokens and components between Terecode and your Figma libraries."
+  },
+  "Install": {
+    "eyebrow": "Get started",
+    "title": "Install the CLI and compile your first component.",
+    "leadPrefix": "Add Terecode to any project. Point it at a",
+    "leadSuffix": "file and pick your targets.",
+    "readDocs": "Read the docs",
+    "star": "Star on GitHub"
+  },
+  "Footer": {
+    "tagline": "The universal UI compiler. Write components once, ship idiomatic code to every framework.",
+    "why": "Why Terecode",
+    "targets": "Targets",
+    "features": "Features",
+    "github": "GitHub",
+    "rights": "MIT License"
+  },
+  "Theme": {
+    "toLight": "Switch to light mode",
+    "toDark": "Switch to dark mode"
+  },
+  "Lang": {
+    "label": "Language"
+  }
+}
