@@ -1,7 +1,5 @@
-#
-
 <div align="center">
-  <img src="./assets/svg/lockup/lockup-horizontal.svg" alt="Terecode" width="100%" />
+  <img src="assets/png/lockup/lockup-horizontal-dark.png" alt="Terecode - Landing Page" width="100%" />
 </div>
 
 <div align="center">
@@ -11,30 +9,26 @@
 </div>
 
 <div align="center">
-  The public landing page for <a href="https://github.com/terecode/terecode">Terecode</a> -
-  a declarative language for UI components that compiles one source to idiomatic,
-  readable code for React, Vue, Svelte, Solid, Angular and six more targets.
+  Define once. Compile everywhere.
 </div>
 
 <div align="center">
-  <a href="https://terecode-dsl.com">terecode-dsl.com</a> ·
-  <a href="https://github.com/terecode/terecode">compiler repo</a> ·
-  <a href="./assets/README.md">brand assets</a>
+  <a href="src/">source</a>
 </div>
 
+<br />
+
 <div align="center">
-
-<a href="https://skillicons.dev">
-  <img src="https://skillicons.dev/icons?i=nextjs,react,ts,tailwind,nodejs,npm" alt="Next.js · React · TypeScript · Tailwind CSS · Node.js · npm" />
-</a>
-
+  <a href="https://go-skill-icons.vercel.app/">
+    <img src="https://go-skill-icons.vercel.app/api/icons?i=typescript,react,vue,angular,svelte,git&titles=true" alt="Technology stack" />
+  </a>
 </div>
 
 ---
 
 <div align="center">
 
-## 🎯 Project shape
+## 🎯 Purpose
 
 </div>
 
@@ -47,70 +41,15 @@ A **single multilingual landing page**, not a SaaS marketing site. No signup, no
 
 <div align="center">
 
-## 🛠️ Tech stack
+## 🏗️ Architecture
 
 </div>
 
-| Concern           | Choice                                                     |
-| ----------------- | ---------------------------------------------------------- |
-| Framework         | Next.js 16 (App Router, RSC by default)                    |
-| Language          | TypeScript (strict)                                        |
-| Runtime           | React 19                                                   |
-| Styling           | Tailwind CSS v4 (CSS-first `@theme`, no `tailwind.config`)  |
-| Design tokens     | `oklch` CSS variables in [`globals.css`](./src/app/globals.css) |
-| Icons             | `lucide-react`                                             |
-| Class merging     | `clsx` + `tailwind-merge` (`cn()`)                          |
-| Fonts             | Geist Sans + Geist Mono via `next/font`                    |
-| Theme             | Inline `ThemeScript` (dark default, no flash)              |
-| i18n              | `next-intl` v4 - 5 locales, English fallback               |
-| Package manager   | `npm`                                                      |
+The implementation is organized in [src/](src/). See the project layout and source code for the component boundaries.
 
 <div align="center">
 
-## 🌐 Locales
-
-</div>
-
-| Code | Language  | Code | Language   |
-| ---- | --------- | ---- | ---------- |
-| `en` | English   | `de` | Deutsch    |
-| `es` | Español   | `pt` | Português  |
-| `fr` | Français  |      |            |
-
-Default locale is `en`. The prefix is always present in the URL (`/en/...`, `/es/...`); [`src/proxy.ts`](./src/proxy.ts) negotiates the locale and redirects `/` accordingly. Translation messages live in [`messages/<locale>.json`](./messages); the locale list and labels are configured in [`src/i18n/routing.ts`](./src/i18n/routing.ts).
-
-English is the **source of truth**: [`src/i18n/request.ts`](./src/i18n/request.ts) deep-merges each translation over `messages/en.json`, so a key a translation hasn't caught up with falls back to English instead of throwing.
-
-<div align="center">
-
-## 💻 Local development
-
-</div>
-
-```bash
-npm install
-npm run dev
-```
-
-Open <http://localhost:3000>. You will be redirected to the prefix for the negotiated locale.
-
-<div align="center">
-
-## ⚡ Scripts
-
-</div>
-
-| Script              | Purpose                    |
-| ------------------- | -------------------------- |
-| `npm run dev`       | Next.js dev server         |
-| `npm run build`     | Production build           |
-| `npm start`         | Serve the production build |
-| `npm run lint`      | ESLint via `next lint`     |
-| `npm run typecheck` | TypeScript with `--noEmit` |
-
-<div align="center">
-
-## 📁 Repository layout
+## 📦 Project layout
 
 </div>
 
@@ -153,7 +92,82 @@ public/grid.svg                 # decorative grid used by the Install panel
 
 <div align="center">
 
-## 🔗 Import conventions
+## 🛠️ Tech stack
+
+</div>
+
+| Concern           | Choice                                                     |
+| ----------------- | ---------------------------------------------------------- |
+| Framework         | Next.js 16 (App Router, RSC by default)                    |
+| Language          | TypeScript (strict)                                        |
+| Runtime           | React 19                                                   |
+| Styling           | Tailwind CSS v4 (CSS-first `@theme`, no `tailwind.config`)  |
+| Design tokens     | `oklch` CSS variables in [`globals.css`](./src/app/globals.css) |
+| Icons             | `lucide-react`                                             |
+| Class merging     | `clsx` + `tailwind-merge` (`cn()`)                          |
+| Fonts             | Geist Sans + Geist Mono via `next/font`                    |
+| Theme             | Inline `ThemeScript` (dark default, no flash)              |
+| i18n              | `next-intl` v4 - 5 locales, English fallback               |
+| Package manager   | `npm`                                                      |
+
+<div align="center">
+
+## 🚀 Development setup
+
+</div>
+
+```bash
+npm install
+npm run dev
+```
+
+Open <http://localhost:3000>. You will be redirected to the prefix for the negotiated locale.
+
+<div align="center">
+
+## 🧪 Testing and quality gates
+
+</div>
+
+```bash
+npm run typecheck
+npm run lint
+npm run build
+```
+
+<div align="center">
+
+## 🔹 Locales
+
+</div>
+
+| Code | Language  | Code | Language   |
+| ---- | --------- | ---- | ---------- |
+| `en` | English   | `de` | Deutsch    |
+| `es` | Español   | `pt` | Português  |
+| `fr` | Français  |      |            |
+
+Default locale is `en`. The prefix is always present in the URL (`/en/...`, `/es/...`); [`src/proxy.ts`](./src/proxy.ts) negotiates the locale and redirects `/` accordingly. Translation messages live in [`messages/<locale>.json`](./messages); the locale list and labels are configured in [`src/i18n/routing.ts`](./src/i18n/routing.ts).
+
+English is the **source of truth**: [`src/i18n/request.ts`](./src/i18n/request.ts) deep-merges each translation over `messages/en.json`, so a key a translation hasn't caught up with falls back to English instead of throwing.
+
+<div align="center">
+
+## 🔹 Scripts
+
+</div>
+
+| Script              | Purpose                    |
+| ------------------- | -------------------------- |
+| `npm run dev`       | Next.js dev server         |
+| `npm run build`     | Production build           |
+| `npm start`         | Serve the production build |
+| `npm run lint`      | ESLint via `next lint`     |
+| `npm run typecheck` | TypeScript with `--noEmit` |
+
+<div align="center">
+
+## 🔹 Import conventions
 
 </div>
 
@@ -163,7 +177,7 @@ public/grid.svg                 # decorative grid used by the Install panel
 
 <div align="center">
 
-## 🎨 Design principles
+## 🔹 Design principles
 
 </div>
 
@@ -177,7 +191,7 @@ public/grid.svg                 # decorative grid used by the Install panel
 
 <div align="center">
 
-## ✏️ Editing content
+## 🔹 Editing content
 
 </div>
 
@@ -195,7 +209,7 @@ Adding a **locale** takes no component changes: add the code to `routing.ts` wit
 
 <div align="center">
 
-## 🚀 Deployment
+## 🔹 Deployment
 
 </div>
 
@@ -203,8 +217,24 @@ Optimised for Vercel or Cloudflare Pages. `next build` emits prerendered routes 
 
 <div align="center">
 
-## 📄 License
-
-Private and unpublished - no license is granted yet.
+## 📚 Documentation
 
 </div>
+
+- [Assets](assets/)
+
+<div align="center">
+
+## 🔬 Scope and status
+
+</div>
+
+Define once. Compile everywhere.
+
+<div align="center">
+
+## 📄 License
+
+</div>
+
+Private and unpublished - no license is granted yet.
