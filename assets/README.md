@@ -1,55 +1,17 @@
-# Terecode — Brand Assets
+# Terecode — Brand assets
 
-**Cross-platform UI compiler**
+Shared variant convention across the four organizations.
 
-## Files
+| Variant | Background | Artwork |
+|---|---|---|
+| Horizontal / vertical | Transparent | Brand-colored symbol, dark text |
+| Dark lockup / wordmark | `#2D2D2D` | Solid white |
+| Monochrome | Transparent | Solid black |
+| Symbol / symbol-light / symbol-color | Transparent | Black / white / brand colors |
+| Wordmark / wordmark-light | Transparent | Dark text |
+| Favicon / avatar | `#2D2D2D` | Solid white symbol |
+| Safari pinned tab | Transparent | Solid black symbol |
 
-```
-assets/
-├── README.md
-├── svg/                         Source assets
-│   ├── terecode-master.svg      Full brand overview
-│   ├── lockup/
-│   ├── symbol/
-│   ├── wordmark/
-│   └── favicon/
-└── png/                         4× rasterized assets, mirroring svg/
-    ├── terecode-master.png
-    ├── lockup/
-    ├── symbol/
-    ├── wordmark/
-    └── favicon/
-```
+PNG sizes: horizontal 2000×480, vertical 1200×1200, symbols 1024×1024, wordmarks 1600×400, favicons 256×256. Typography uses Arial with Helvetica and sans-serif fallbacks; no remote font imports.
 
-## Colors
-
-| Name       | Hex       | Role                  |
-|------------|-----------|-----------------------|
-| Deep Ink   | `#0B1220` | Page background       |
-| Dev Blue   | `#2563EB` | Primary accent        |
-| Indigo     | `#4F46E5` | Transformation        |
-| Teal       | `#14B8A6` | Interoperability      |
-| Slate      | `#64748B` | Muted text            |
-| Soft Gray  | `#E2E8F0` | Surfaces              |
-| Off-white  | `#F8FAFC` | Body text             |
-
-## Typography
-
-- **Display / Wordmark:** JetBrains Mono, weight 600–700
-- **Body:** Inter, weight 400–500
-- **Code / Labels:** JetBrains Mono, weight 400
-
-SVG files embed a Google Fonts `@import` for JetBrains Mono and Inter.
-Convert text to outlines for print or offline environments.
-
-## Usage
-
-The primary mark is the **modular T**: five 18×18px grid modules —
-three across the crossbar (source definition) and two descending
-as the stem (compiled output). Use `symbol-color.svg` on dark backgrounds.
-
-Do not stretch, recolor, or add effects to the mark.
-
----
-
-*Terecode — Define once. Compile everywhere.*
+Regeneration: `python C:/develop/phronesis-framework/assets/scripts/normalize-assets.py`. Requires `rsvg-convert`. Validation: append `--check`.
